@@ -308,3 +308,41 @@ Section:NewToggle("FPS Lock 🔒", "ToggleInfo", function(state)
     })
     end
 end)
+
+local Tab = Window:NewTab("🔥Trade Scam🔥")
+local Section = Tab:NewSection("Trade Scam Script")
+
+Section:NewLabel("Made By @OfficialPS99Duper On Youtube")
+
+Section:NewButton("Open Trade Scam GUI", "ButtonInfo", function()
+    local library = loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/0x"))()
+
+local w1 = library:Window("Trade Scam GUI") -- Text
+
+w1:Label("Made By @OfficialPS99Duper") -- Text
+
+w1:Toggle(
+    "Start Trade Scam",
+    "frz",
+    false,
+    function(toggled)
+        print("hi")
+    end
+)
+
+w1:Toggle(
+    "Hide Pets On Trade",
+    "frz",
+    false,
+    function(toggled)
+        print("hi")
+    end
+)
+
+w1:Button(
+    "Anti Leave Player",
+    function()
+        print("Hi")
+    end
+)
+end)
