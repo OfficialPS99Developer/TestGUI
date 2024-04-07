@@ -346,3 +346,15 @@ w1:Button(
     end
 )
 end)
+
+local Tab = Window:NewTab("🔥Minigames Pet Dupe🔥")
+local Section = Tab:NewSection("Minigames Pet Dupe Exploit")
+
+Section:NewLabel("Made By @OfficialPS99Duper On Youtube")
+
+Section:NewButton("Minigames Pet Dupe🐶", "ButtonInfo", function()
+    game.StarterGui:SetCore("SendNotification",{
+        Title = "Minigames Pet Dupe";
+        Text = "Minigames Pet Dupe Successfully!";
+    })
+end)
