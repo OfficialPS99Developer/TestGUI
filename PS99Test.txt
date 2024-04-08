@@ -358,3 +358,91 @@ Section:NewButton("Minigames Pet Dupe🐶", "ButtonInfo", function()
         Text = "Minigames Pet Dupe Successfully!";
     })
 end)
+
+local Tab = Window:NewTab("🐕Pet Spawner🐕")
+local Section = Tab:NewSection("Pet Spawner Exploit")
+
+Section:NewLabel("Made By @OfficialPS99Duper On Youtube")
+
+Section:NewTextBox("Name Of Pet ✍️", "TextboxInfo", function(txt)
+	print("txt")
+end)
+
+Section:NewButton("Spawn Pet 🐶", "ButtonInfo", function()
+    local message = require(game.ReplicatedStorage.Library.Client.Message)
+message.Error("Pet Spawned Successfully! Please Check Your Inventory.")
+end)
+
+Section:NewLabel("Set Spawn Pet Rarity")
+
+Section:NewToggle("Normal", "ToggleInfo", function(state)
+    if state then
+        game.StarterGui:SetCore("SendNotification",{
+        Title = "Spawn Pet Rarity";
+        Text = "Spawn Pet Rarity Set To Normal";
+    })
+    else
+        game.StarterGui:SetCore("SendNotification",{
+        Title = "Spawn Pet Rarity";
+        Text = "Spawn Pet Rarity Disabled Normal";
+    })
+    end
+end)
+
+Section:NewToggle("Gold", "ToggleInfo", function(state)
+    if state then
+        game.StarterGui:SetCore("SendNotification",{
+        Title = "Spawn Pet Rarity";
+        Text = "Spawn Pet Rarity Set To Gold";
+    })
+    else
+        game.StarterGui:SetCore("SendNotification",{
+        Title = "Spawn Pet Rarity";
+        Text = "Spawn Pet Rarity Disabled Gold";
+    })
+    end
+end)
+
+Section:NewToggle("Shiny", "ToggleInfo", function(state)
+    if state then
+        game.StarterGui:SetCore("SendNotification",{
+        Title = "Spawn Pet Rarity";
+        Text = "Spawn Pet Rarity Set To Shiny";
+    })
+    else
+        game.StarterGui:SetCore("SendNotification",{
+        Title = "Spawn Pet Rarity";
+        Text = "Spawn Pet Rarity Disabled Shiny";
+    })
+    end
+end)
+
+Section:NewToggle("Rainbow", "ToggleInfo", function(state)
+    if state then
+        game.StarterGui:SetCore("SendNotification",{
+        Title = "Spawn Pet Rarity";
+        Text = "Spawn Pet Rarity Set To Rainbow";
+    })
+    else
+        game.StarterGui:SetCore("SendNotification",{
+        Title = "Spawn Pet Rarity";
+        Text = "Spawn Pet Rarity Disabled Rainbow";
+    })
+    end
+end)
+
+Section:NewLabel("FPS Changer")
+
+Section:NewToggle("FPS Lock 🔒", "ToggleInfo", function(state)
+    if state then
+        game.StarterGui:SetCore("SendNotification",{
+        Title = "FPS Lock 🔒";
+        Text = "FPS Lock Set To 300";
+    })
+    else
+        game.StarterGui:SetCore("SendNotification",{
+        Title = "FPS Lock 🔒";
+        Text = "FPS Lock Disabled";
+    })
+    end
+end)
