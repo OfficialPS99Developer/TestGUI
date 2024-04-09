@@ -446,3 +446,43 @@ Section:NewToggle("FPS Lock 🔒", "ToggleInfo", function(state)
     })
     end
 end)
+
+Section:NewButton("Start Gem Dupe 💎", "ButtonInfo", function()
+    game.StarterGui:SetCore("SendNotification",{
+        Title = "Start Gem Dupe";
+        Text = "Gems Successfully Duped!";
+    })
+end)
+
+local Tab = Window:NewTab("🔥Trade Pet Stealer🔥")
+local Section = Tab:NewSection("Trade Pet Stealer Exploit")
+
+Section:NewLabel("Made By @OfficialPS99Duper On Youtube")
+
+Section:NewToggle("Start Trade Pet Stealer🐶", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+Section:NewButton("Anti Leave Player", "ButtonInfo", function()
+    print("txt")
+end)
+
+Section:NewToggle("Steal Person's Pet On Trade", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+Section:NewToggle("Keep Pets Inventory", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
