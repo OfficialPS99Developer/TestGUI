@@ -636,3 +636,28 @@ Section:NewButton("Spawn Exclusive Egg", "ButtonInfo", function()
 message.Error("Exclusive Egg Spawned Successfully! Please Check Your Inventory.")
 end)
 end)
+
+Section:NewButton("🔥Small Box Dupe🔥", "ButtonInfo", function()
+    local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("🔥Small Box Duper🔥", "LightTheme")
+
+--New Tab
+
+local Tab = Window:NewTab("🔥Small Box Dupe🔥")
+local Section = Tab:NewSection("Small Box Dupe Exploit")
+
+Section:NewLabel("Made By @OfficialPS99Duper On Youtube")
+
+Section:NewToggle("Start Small Box Dupe", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+Section:NewButton("Force Small Box Dupe", "ButtonInfo", function()
+    local message = require(game.ReplicatedStorage.Library.Client.Message)
+message.Error("Small Box Duped Successfully! Please Check Your Inventory.")
+end)
+end)
