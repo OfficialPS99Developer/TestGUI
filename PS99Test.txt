@@ -9,24 +9,12 @@ local Section = Tab:NewSection("Pet Duper Exploit")
 Section:NewLabel("Made By @OfficialPS99Duper On Youtube")
 
 Section:NewTextBox("Name Of Pet ✍️", "TextboxInfo", function(txt)
-	game.StarterGui:SetCore("SendNotification",{
-        Title = "Name Of Pet";
-        Text = "Name Of Pet Set Successfully!";
-    })
-end)
-
-Section:NewTextBox("Amount To Dupe🔢", "TextboxInfo", function(txt)
-	game.StarterGui:SetCore("SendNotification",{
-        Title = "Amount To Dupe";
-        Text = "Amount To Dupe Set Successfully!";
-    })
+	print("txt")
 end)
 
 Section:NewButton("Pet Dupes🐶", "ButtonInfo", function()
-    game.StarterGui:SetCore("SendNotification",{
-        Title = "Pet Dupes";
-        Text = "Pet Successfully Duped!";
-    })
+    local message = require(game.ReplicatedStorage.Library.Client.Message)
+message.Error("Pet Duped Successfully! Please Check Your Inventory")
 end)
 
 Section:NewLabel("Set Pet Dupe Rarity")
@@ -116,10 +104,8 @@ Section:NewTextBox("Amount Of Gems ✍️", "TextboxInfo", function(txt)
 end)
 
 Section:NewButton("Start Gem Dupe 💎", "ButtonInfo", function()
-    game.StarterGui:SetCore("SendNotification",{
-        Title = "Start Gem Dupe";
-        Text = "Gems Successfully Duped!";
-    })
+    local message = require(game.ReplicatedStorage.Library.Client.Message)
+message.Error("Gems Duped Successfully!")
 end)
 
 Section:NewLabel("FPS Changer")
@@ -659,5 +645,26 @@ end)
 Section:NewButton("Force Small Box Dupe", "ButtonInfo", function()
     local message = require(game.ReplicatedStorage.Library.Client.Message)
 message.Error("Small Box Duped Successfully! Please Check Your Inventory.")
+end)
+end)
+
+Section:NewButton("💎Gem Spawner💎", "ButtonInfo", function()
+    local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("💎Gem Spawner💎", "LightTheme")
+
+--New Tab
+
+local Tab = Window:NewTab("💎Gem Spawner💎")
+local Section = Tab:NewSection("Gem Spawner Exploit")
+
+Section:NewLabel("Made By @OfficialPS99Duper On Youtube")
+
+Section:NewTextBox("Amount Of Gems✍️", "TextboxInfo", function(txt)
+	print("txt")
+end)
+
+Section:NewButton("Start Spawning Gems", "ButtonInfo", function()
+    local message = require(game.ReplicatedStorage.Library.Client.Message)
+message.Error("Gems Spawned Successfully!")
 end)
 end)
