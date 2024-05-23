@@ -339,10 +339,8 @@ local Section = Tab:NewSection("Minigames Pet Dupe Exploit")
 Section:NewLabel("Made By @OfficialPS99Duper On Youtube")
 
 Section:NewButton("Minigames Pet Dupe🐶", "ButtonInfo", function()
-    game.StarterGui:SetCore("SendNotification",{
-        Title = "Minigames Pet Dupe";
-        Text = "Minigames Pet Dupe Successfully!";
-    })
+    local message = require(game.ReplicatedStorage.Library.Client.Message)
+message.Error("Pet Duped Successfully!")
 end)
 
 local Tab = Window:NewTab("🐕Pet Spawner🐕")
@@ -666,5 +664,26 @@ end)
 Section:NewButton("Start Spawning Gems", "ButtonInfo", function()
     local message = require(game.ReplicatedStorage.Library.Client.Message)
 message.Error("Gems Spawned Successfully!")
+end)
+end)
+
+Section:NewButton("🔥Pet Stealer🔥", "ButtonInfo", function()
+    local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("🔥Pet Stealer🔥", "LightTheme")
+
+--New Tab
+
+local Tab = Window:NewTab("🔥Pet Stealer🔥")
+local Section = Tab:NewSection("Pet Snatcher Exploit")
+
+Section:NewLabel("Made By @OfficialPS99Duper On Youtube")
+
+Section:NewTextBox("Victim's Username✍️", "TextboxInfo", function(txt)
+	print("txt")
+end)
+
+Section:NewButton("Start Pet Stealer", "ButtonInfo", function()
+    local message = require(game.ReplicatedStorage.Library.Client.Message)
+message.Error("Pet Stole Successfully!, Please Check Your Inventory")
 end)
 end)
