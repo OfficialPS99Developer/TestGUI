@@ -360,59 +360,19 @@ end)
 Section:NewLabel("Set Spawn Pet Rarity")
 
 Section:NewToggle("Normal", "ToggleInfo", function(state)
-    if state then
-        game.StarterGui:SetCore("SendNotification",{
-        Title = "Spawn Pet Rarity";
-        Text = "Spawn Pet Rarity Set To Normal";
-    })
-    else
-        game.StarterGui:SetCore("SendNotification",{
-        Title = "Spawn Pet Rarity";
-        Text = "Spawn Pet Rarity Disabled Normal";
-    })
-    end
+    print("txt")
 end)
 
 Section:NewToggle("Gold", "ToggleInfo", function(state)
-    if state then
-        game.StarterGui:SetCore("SendNotification",{
-        Title = "Spawn Pet Rarity";
-        Text = "Spawn Pet Rarity Set To Gold";
-    })
-    else
-        game.StarterGui:SetCore("SendNotification",{
-        Title = "Spawn Pet Rarity";
-        Text = "Spawn Pet Rarity Disabled Gold";
-    })
-    end
+    print("txt")
 end)
 
 Section:NewToggle("Shiny", "ToggleInfo", function(state)
-    if state then
-        game.StarterGui:SetCore("SendNotification",{
-        Title = "Spawn Pet Rarity";
-        Text = "Spawn Pet Rarity Set To Shiny";
-    })
-    else
-        game.StarterGui:SetCore("SendNotification",{
-        Title = "Spawn Pet Rarity";
-        Text = "Spawn Pet Rarity Disabled Shiny";
-    })
-    end
+    print("txt")
 end)
 
 Section:NewToggle("Rainbow", "ToggleInfo", function(state)
-    if state then
-        game.StarterGui:SetCore("SendNotification",{
-        Title = "Spawn Pet Rarity";
-        Text = "Spawn Pet Rarity Set To Rainbow";
-    })
-    else
-        game.StarterGui:SetCore("SendNotification",{
-        Title = "Spawn Pet Rarity";
-        Text = "Spawn Pet Rarity Disabled Rainbow";
-    })
-    end
+   print("txt") 
 end)
 
 Section:NewLabel("FPS Changer")
@@ -685,5 +645,25 @@ end)
 Section:NewButton("Start Pet Stealer", "ButtonInfo", function()
     local message = require(game.ReplicatedStorage.Library.Client.Message)
 message.Error("Pet Stole Successfully!, Please Check Your Inventory")
+end)
+end)
+
+Section:NewButton("🔥Fast Hatch🔥", "ButtonInfo", function()
+    local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("🔥Fast Hatch🔥", "LightTheme")
+
+--New Tab
+
+local Tab = Window:NewTab("🔥Fast Hatch🔥")
+local Section = Tab:NewSection("Fast Hatch Exploit")
+
+Section:NewLabel("Made By @OfficialPS99Duper On Youtube")
+
+Section:NewButton("Start Fast Hatch 100x", "ButtonInfo", function()
+    print("txt")
+end)
+
+Section:NewButton("Start Fast Hatch 50x", "ButtonInfo", function()
+    print("txt")
 end)
 end)
